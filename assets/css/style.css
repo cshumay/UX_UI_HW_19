@@ -1,0 +1,452 @@
+html{
+  height: 100%;
+}
+
+body{
+    margin: 0;
+    background: #494c70;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+  flex: 1 0 auto;
+}
+
+/* Nav Bar*/
+.header {
+  overflow: hidden;
+  background-color: #ffffff;
+  padding: 20px 10px;
+font-family: "Lora";
+}
+
+.logo{
+position: absolute;
+left: 5px;
+top: 0px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+}
+
+.header a:hover {
+  background-color: #80A9B6;
+  color: white;
+}
+
+.header a.active {
+  background-color: #286A8C;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.logo img{
+    position: absolute;
+    margin-top: .25%;
+    margin-left: 5%;
+}
+
+.linkedin img{
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 90%;
+}
+
+.behance img{
+    position: absolute;
+    margin-top: .75%;
+    margin-left: 95%;
+}
+
+.topbtn{
+    color: white;
+    background-color: #286a8c;
+    padding: 8px;
+    border: none;
+    font-family: "Radio Canada";
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.topbtn:hover{
+    background-color: black;
+    transition: 0.5s
+}
+
+.responsive{
+ max-width: 90%;
+  height: auto;
+} 
+
+/* Hero Section */
+.heroGrid{
+  display: grid;
+  grid-template-areas: 'hero1 hero2';
+  grid-template-rows: 25% 75%;
+  font-family: "Lora";
+  color: white;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Lora";
+  color: white;
+}
+
+/* My Portfolio Section */
+.myWork {
+  padding: 60px 30px;
+  padding-top: 0;
+  color: white;
+}
+
+.workGrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 350px 350px 350px;
+  grid-template-areas:
+  "doi doiSummary"
+  "jettySummary jetty"
+  "garvin garvinSummary"
+  ;
+}
+
+.workGrid img {
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+  display: block;
+}
+
+.doi {
+  grid-area: doi;
+}
+
+.jetty {
+  grid-area: jetty;
+}
+
+.garvin {
+  grid-area: garvin;
+}
+
+.doi, .jetty, .garvin, .doiSummary, .jettySummary, .garvinSummary {
+  padding: 40px;
+}
+
+.doiSummary {
+  grid-area: doiSummary;
+}
+
+.doiSummary h4{
+  font-family: "Lora";
+  font-size: 20px;
+  color: #80A9BC;
+}
+
+.doiSummary p {
+  font-family: "Radio Canada";
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.jettySummary {
+  grid-area: jettySummary;
+}
+
+.jettySummary h4{
+  font-family: "Lora";
+  font-size: 20px;
+  color: #80A9BC;
+}
+
+.jettySummary p {
+  font-family: "Radio Canada";
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.garvinSummary {
+  grid-area: garvinSummary;
+}
+
+.garvinSummary h4{
+  font-family: "Lora";
+  font-size: 20px;
+  color: #80A9BC;
+}
+
+.garvinSummary p {
+  font-family: "Radio Canada";
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+#rectangle{
+  width: 100%;
+  height: 20px;
+  background: #80A9BC;
+}
+
+.midbtn{
+  color: white;
+  background-color: #286a8c;
+  padding: 8px;
+  border: none;
+  font-family: "Radio Canada";
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.midbtn:hover{
+  background-color: black;
+  transition: 0.5s
+}
+
+.myWork h3{
+  text-align: center;
+  font-family: "Lora";
+}
+
+/* Skills Section*/
+.skillsGrid {
+  display: grid;
+  grid-template-areas: 'left right';
+  grid-template-columns: 50% 50%;
+  color: white;
+  text-align: center;
+}
+
+.left h2{
+  font-family: "Lora";
+  color: #80A9BC;
+}
+
+.left h3{
+  font-family: "Radio Canada";
+  font-weight: 100;
+}
+
+.right h2{
+  font-family: "Lora";
+}
+
+/* About Me Section */
+.item1 {
+    grid-area: TL;
+}
+  
+.item2 {
+    grid-area: TR;
+}
+  
+.item3 {
+    grid-area: BL;
+}
+  
+.item4 {
+    grid-area:BR;
+}
+  
+  .aboutGrid {
+    display: grid;
+    grid-template-areas:
+      'TL TR'
+      'BL BR';
+    gap: 5px;
+    background-color: #494c70;
+   padding-bottom: 80px;
+}
+  
+  .aboutGrid > div {
+    text-align: center;
+    padding: 20px 20px;
+}
+  
+  .item1 img{
+    max-width: 80%;
+}
+
+  .item2 h1{
+    font-family: "Lora";
+    color: white;
+}
+  
+  .item2 h3{
+      font-family: "Radio Canada";
+      color: white;
+      font-weight: 300;
+}
+
+  .item4 img{
+    max-width: 60%;
+}
+  
+  input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+}
+  
+  input[type=submit] {
+    background-color: #286a8c;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: absolute;
+}
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
+    margin-top: 7%;
+}
+
+/* Footer Section */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    color: black;
+    font-family: "lora";
+    flex-shrink: 0;
+}
+
+.footer-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: white;
+}
+
+.btmbtn {
+    color: black;
+    background-color: white;
+    padding: 8px;
+    border: none;
+    font-family: "Radio Canada";
+    font-size: 20px;
+    cursor: pointer;    
+}
+
+.btmbtn:hover{
+    color: #286a8c;
+    transition: 0.5s
+}
+
+.btmlogo img{
+    position: absolute;
+    margin-top: 0.5%;
+    margin-left: 0.5%;
+}
+
+.btmlinkedin img{
+    position: absolute;
+    margin-top: 1.25%;
+    margin-left: 17%;
+}
+
+.btmbehance img{
+    position: absolute;
+    margin-top: 1.25%;
+    margin-left: 13%;
+}
+.footer-content p{
+    position: absolute;
+    left: 4.5%;
+    margin-top: 1%;
+}
+
+.footer-content {
+  float: right;
+}
+
+@media only screen and (max-width: 600px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+
+  .footer-content{
+    float: none;
+  }
+ 
+  .heroGrid{
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "hero1"
+    "hero2";
+  }
+
+  .workGrid{
+    display: grid;
+    grid-template-rows: 350px 350px 350px 350px 350px 350px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "doi"
+    "doiSummary"
+    "jetty"
+    "jettySummary"
+    "garvin"
+    "garvinSummary";
+    min-width: 300px;
+  }
+
+  .doi p{
+    font-size: 20px;
+  }
+
+  .skillsGrid{
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1 fr;
+    grid-template-areas: 
+    "left"
+    "right";
+  }
+  .aboutGrid{
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "TL"
+    "TR"
+    "BL"
+    "BR";
+  }
+}
