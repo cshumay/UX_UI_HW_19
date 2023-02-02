@@ -170,7 +170,7 @@ top: 0px;
 }
 
 .flip-card-front-doi {
-  background-image: url("/assets/images/DOI\ Before.png");
+  background-image: url("assets/images/DOI\ Before.png");
   color: black;
   z-index: 2;
   display: flex;
@@ -179,7 +179,7 @@ top: 0px;
 }
 
 .flip-card-back-doi {
-  background-image: url("/assets/images/DOI\ After.png");
+  background-image: url("assets/images/DOI\ After.png");
   color: white;
   transform: rotateY(180deg);
   z-index: 1;
@@ -242,7 +242,7 @@ top: 0px;
 }
 
 .flip-card-front-jetty {
-  background-image: url("/assets/images/JettyBefore.png");
+  background-image: url("assets/images/JettyBefore.png");
   background-repeat: no-repeat;
   color: black;
   z-index: 2;
@@ -252,7 +252,7 @@ top: 0px;
 }
 
 .flip-card-back-jetty {
-  background-image: url("/assets/images/JettyAfter.png");
+  background-image: url("assets/images/JettyAfter.png");
   background-repeat: no-repeat;
   color: white;
   transform: rotateY(180deg);
@@ -286,7 +286,7 @@ top: 0px;
 }
 
 .flip-card-front-garvin {
-  background-image: url("/assets/images/Garvin\ Before.png");
+  background-image: url("assets/images/Garvin\ Before.png");
   color: black;
   z-index: 2;
   display: flex;
@@ -295,7 +295,7 @@ top: 0px;
 }
 
 .flip-card-back-garvin {
-  background-image: url("/assets/images/Garvin\ After.png");
+  background-image: url("assets/images/Garvin\ After.png");
   color: white;
   transform: rotateY(180deg);
   z-index: 1;
