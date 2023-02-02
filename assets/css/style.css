@@ -133,6 +133,7 @@ top: 0px;
   color: white;}
 
 /* My Portfolio Section */
+
     /* Before-After Flip Section Start */
 .flip-card {
   background-color: transparent;
@@ -148,7 +149,6 @@ top: 0px;
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   backface-visibility: hidden;
   -moz-backface-visibility: hidden;
 }
@@ -170,7 +170,7 @@ top: 0px;
 }
 
 .flip-card-front-doi {
-  background-image: url("https://www.thesprucepets.com/thmb/3ABKoAPm0Hu4PcWsDH1giawq7ck=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/chinese-dog-breeds-4797219-hero-2a1e9c5ed2c54d00aef75b05c5db399c.jpg");
+  background-image: url("/assets/images/DOI\ Before.png");
   color: black;
   z-index: 2;
   display: flex;
@@ -179,7 +179,7 @@ top: 0px;
 }
 
 .flip-card-back-doi {
-  background-image: url("https://www.thesprucepets.com/thmb/CR_0yJhT7fuqxF3A10Z3LDeB5bY=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-94456490-e5e698281bd44ed99770988ac342c113.jpg");
+  background-image: url("/assets/images/DOI\ After.png");
   color: white;
   transform: rotateY(180deg);
   z-index: 1;
@@ -188,11 +188,34 @@ top: 0px;
   align-items: center;
 }
 
-h3 {
-  font-size: 20px;
-  font-family: Verdana, sans-serif;
-  font-weight: bold;
-  color: #fff;
+.jetty h3{
+ writing-mode: vertical-rl;
+  font-size: 1rem;
+  color: black;
+  text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  font-family: "Radio Canada";
+}
+
+.doi h3{
+  writing-mode: vertical-rl;
+  font-size: 1rem;
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  font-family: "Radio Canada";
+}
+
+.garvin h3{
+  writing-mode: vertical-rl;
+  font-size: 1rem;
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  font-family: "Radio Canada";
 }
 
 .flip-card-inner-jetty {
@@ -202,7 +225,6 @@ h3 {
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   backface-visibility: hidden;
   -moz-backface-visibility: hidden;
 }
@@ -220,7 +242,7 @@ h3 {
 }
 
 .flip-card-front-jetty {
-  background-image: url("/assets/images/Jetty\ Before.png");
+  background-image: url("/assets/images/JettyBefore.png");
   background-repeat: no-repeat;
   color: black;
   z-index: 2;
@@ -230,7 +252,7 @@ h3 {
 }
 
 .flip-card-back-jetty {
-  background-image: url("/assets/images/Jetty\ After.png");
+  background-image: url("/assets/images/JettyAfter.png");
   background-repeat: no-repeat;
   color: white;
   transform: rotateY(180deg);
@@ -247,7 +269,6 @@ h3 {
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   backface-visibility: hidden;
   -moz-backface-visibility: hidden;
 }
@@ -265,7 +286,7 @@ h3 {
 }
 
 .flip-card-front-garvin {
-  background-image: url("https://www.thesprucepets.com/thmb/3ABKoAPm0Hu4PcWsDH1giawq7ck=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/chinese-dog-breeds-4797219-hero-2a1e9c5ed2c54d00aef75b05c5db399c.jpg");
+  background-image: url("/assets/images/Garvin\ Before.png");
   color: black;
   z-index: 2;
   display: flex;
@@ -274,7 +295,7 @@ h3 {
 }
 
 .flip-card-back-garvin {
-  background-image: url("https://www.thesprucepets.com/thmb/CR_0yJhT7fuqxF3A10Z3LDeB5bY=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-94456490-e5e698281bd44ed99770988ac342c113.jpg");
+  background-image: url("/assets/images/Garvin\ After.png");
   color: white;
   transform: rotateY(180deg);
   z-index: 1;
@@ -294,7 +315,7 @@ h3 {
 .workGrid {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 350px 375px 350px;
+  grid-template-rows: 33% 33% 33%;
   grid-template-areas:
   "doi doiSummary"
   "jettySummary jetty"
