@@ -102,13 +102,36 @@ top: 0px;
   text-align: center;
 }
 
+.hero2 h1{
+  font-size: 40px;
+}
 .title {
-  text-align: center;
+text-align: center;
   font-size: 30px;
   font-family: "Lora";
   color: white;
+  font-weight: 250;
 }
 
+.h1{
+  font-size: 35px;
+}
+
+.h2{
+  font-size: 30px;
+}
+
+.h3{
+  font-size: 25px;
+}
+
+.h4{ 
+  font-size: 20px;
+}
+
+.p{
+  font-size: 18px;
+}
 
 
 /* My Talents Section */
@@ -123,22 +146,24 @@ top: 0px;
 }
 
 .flexContainer h3{
-  color: #80A9B6;
+  color: #FEEAD0;
   font-family: "Lora";
 }
 
 .flexContainer p{
   font-family: "Radio Canada";
   font-size: 18px;
-  color: white;}
+  color: white;
+font-weight: 200;
+}
 
 /* My Portfolio Section */
 
     /* Before-After Flip Section Start */
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   perspective: 1000px;
 }
 
@@ -170,7 +195,7 @@ top: 0px;
 }
 
 .flip-card-front-doi {
-  background-image: url("../images/DOI\ Before.png");
+  background-image: url("../images/DOI\ After.png");
   color: black;
   z-index: 2;
   display: flex;
@@ -179,8 +204,8 @@ top: 0px;
 }
 
 .flip-card-back-doi {
-  background-image: url("../images/DOI\ After.png");
-  color: white;
+  background-image: url("../images/DOI\ Before.png");
+  color: black;
   transform: rotateY(180deg);
   z-index: 1;
   display: flex;
@@ -201,7 +226,7 @@ top: 0px;
 .doi h3{
   writing-mode: vertical-rl;
   font-size: 1rem;
-  color: white;
+  color: black;
   text-transform: uppercase;
   position: absolute;
   left: 0;
@@ -211,7 +236,7 @@ top: 0px;
 .garvin h3{
   writing-mode: vertical-rl;
   font-size: 1rem;
-  color: white;
+  color: black;
   text-transform: uppercase;
   position: absolute;
   left: 0;
@@ -242,7 +267,7 @@ top: 0px;
 }
 
 .flip-card-front-jetty {
-  background-image: url("../images/JettyBefore.png");
+  background-image: url("../images/JettyAfter.png");
   background-repeat: no-repeat;
   color: black;
   z-index: 2;
@@ -252,7 +277,7 @@ top: 0px;
 }
 
 .flip-card-back-jetty {
-  background-image: url("../images/JettyAfter.png");
+  background-image: url("../images/JettyBefore.png");
   background-repeat: no-repeat;
   color: white;
   transform: rotateY(180deg);
@@ -286,7 +311,7 @@ top: 0px;
 }
 
 .flip-card-front-garvin {
-  background-image: url("../images/Garvin\ Before.png");
+  background-image: url("../images/Garvin\ After.png");
   color: black;
   z-index: 2;
   display: flex;
@@ -295,7 +320,7 @@ top: 0px;
 }
 
 .flip-card-back-garvin {
-  background-image: url("../images/Garvin\ After.png");
+  background-image: url("../images/Garvin\ Before.png");
   color: white;
   transform: rotateY(180deg);
   z-index: 1;
@@ -318,7 +343,7 @@ top: 0px;
   grid-template-rows: 33% 33% 33%;
   grid-template-areas:
   "doi doiSummary"
-  "jettySummary jetty"
+  "jetty jettySummary"
   "garvin garvinSummary"
   ;
 }
@@ -353,7 +378,7 @@ top: 0px;
 .doiSummary h4{
   font-family: "Lora";
   font-size: 20px;
-  color: #80A9BC;
+  color: #FEEAD0;
 }
 
 .doiSummary p {
@@ -369,7 +394,7 @@ top: 0px;
 .jettySummary h4{
   font-family: "Lora";
   font-size: 20px;
-  color: #80A9BC;
+  color: #FEEAD0;
 }
 
 .jettySummary p {
@@ -385,7 +410,7 @@ top: 0px;
 .garvinSummary h4{
   font-family: "Lora";
   font-size: 20px;
-  color: #80A9BC;
+  color: #FEEAD0;
 }
 
 .garvinSummary p {
@@ -429,18 +454,19 @@ top: 0px;
   text-align: center;
 }
 
-.left h2{
-  font-family: "Lora";
-  color: #80A9BC;
-}
-
 .left h3{
-  font-family: "Radio Canada";
-  font-weight: 100;
+  font-family: "Lora";
+  color: #FEEAD0;
 }
 
-.right h2{
+.left h4{
+font-family: "Radio Canada";
+font-weight: 200;
+}
+
+.right h3{
   font-family: "Lora";
+  color: #FEEAD0;
 }
 
 /* About Me Section */
@@ -476,12 +502,12 @@ top: 0px;
 }
   
   .item1 img{
-    max-width: 80%;
+    max-width: 70%;
 }
 
   .item2 h1{
     font-family: "Lora";
-    color: white;
+    color: #FEEAD0;
 }
   
   .item2 h3{
@@ -513,7 +539,7 @@ top: 0px;
     background-color: #f2f2f2;
     padding: 20px;
     width: 80%;
-    height: 80%;
+    height: 100%;
     margin-left: 10%;
     margin-top: 7%;
 }
@@ -622,6 +648,26 @@ top: 0px;
     float: none;
   }
  
+  .h1{
+    font-size: 27px;
+  }
+  
+  .h2{
+    font-size: 24px;
+  }
+  
+  .h3{
+    font-size: 21px;
+  }
+  
+  .h4{ 
+    font-size: 18px;
+  }
+  
+  .p{
+    font-size: 15px;
+  }
+
   .heroGrid{
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
@@ -667,4 +713,5 @@ top: 0px;
     "BL"
     "BR";
   }
+
 }
