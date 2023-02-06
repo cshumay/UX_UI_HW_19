@@ -102,9 +102,18 @@ top: 0px;
   text-align: center;
 }
 
+.hero1{
+padding-top: 40%;
+}
+
+.hero1 h3{
+  color: #FEEAD0;
+}
+
 .hero2 h1{
   font-size: 40px;
 }
+
 .title {
 text-align: center;
   font-size: 30px;
